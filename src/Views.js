@@ -29,6 +29,10 @@ export class Initial extends LoggingComponent {
 }
 
 export class Modal extends LoggingComponent {
+  componentWillUnmount() {
+    throw new Error('Modal should never unmount in this experiment')
+  }
+
   render() {
     return <div>{this.props.children}</div>
   }
