@@ -34,7 +34,7 @@ export class Modal extends LoggingComponent {
   }
 
   render() {
-    return <div>{this.props.children}</div>
+    return <ha-modal>{this.props.children}</ha-modal>
   }
 }
 
