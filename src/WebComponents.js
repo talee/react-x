@@ -1,6 +1,7 @@
 export var HAModal = document.registerElement('ha-modal', {
   prototype: Object.assign(Object.create(HTMLElement.prototype), {
     attachedCallback() {
+      console.log('attachedCallback:', this)
       let section = this.querySelector('section')
       let footer = this.querySelector('footer')
       if (!section || !footer) {
